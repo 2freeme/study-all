@@ -176,5 +176,19 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
 
+
+
+        <!-- 测试依赖为了方便 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- Junit依赖 -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 </project>
