@@ -1,11 +1,16 @@
 ### java编程思想
 
+#### 地址
+
+1. [https://lingcoder.gitee.io/onjava8/#/book/06-Housekeeping?id=https://lingcoder.gitee.io/onjava8/#/book/06-Housekeeping?id=利用构造器保证初始化](https://lingcoder.gitee.io/onjava8/#/book/06-Housekeeping?id=https://lingcoder.gitee.io/onjava8/#/book/06-Housekeeping?id=利用构造器保证初始化)
+
 #### 运算符
 
 1. Integer的比较
 
    - 会发现在针对于Integer的比较过程中，如果–128到127之间的  Integer的值直接 == 比较。他的结果也会是true
-- 解析原因：归结于java对于Integer与int的自动装箱与拆箱的设计，是一种模式：叫享元模式（flyweight）。
+
+   - 解析原因：归结于java对于Integer与int的自动装箱与拆箱的设计，是一种模式：叫享元模式（flyweight）。
      　　加大对简单数字的重利用，Java定义在自动装箱时对于值从–128到127之间的值，它们被装箱为Integer对象后，会存在内存中被重用，始终只存在一个对象。
      而如果超过了从–128到127之间的值，被装箱后的Integer对象并不会被重用，即相当于每次装箱时都新建一个 Integer对象。
 
