@@ -61,7 +61,8 @@ typora-root-url: image
 
 - mq的顺序消费的机制
 
-  - 即使是Topic的分片，发送的时候，是把他放在特定的broker中的特定queue中的
+  - 即使是Topic的分片，发送的时候，是把他放在特定的broker中的特定queue中的。
+  - 之所以需要topic的分片是因为，本身的话做消息的负载均衡
 
 - mq的延迟的机制
 
