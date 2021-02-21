@@ -63,8 +63,13 @@ typora-root-url: image
 
   - 即使是Topic的分片，发送的时候，是把他放在特定的broker中的特定queue中的。
   - 之所以需要topic的分片是因为，本身的话做消息的负载均衡
+  - 一个queue只会被一个consumer进行消费
 
 - mq的延迟的机制
+
+- mq的producer
+
+  - 是以groupname 和  ip地址作为一个唯一标识
 
 
 
