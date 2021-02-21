@@ -3,6 +3,8 @@
 #### 地址
 
 1. [https://lingcoder.gitee.io/onjava8/#/book/06-Housekeeping?id=https://lingcoder.gitee.io/onjava8/#/book/06-Housekeeping?id=利用构造器保证初始化](https://lingcoder.gitee.io/onjava8/#/book/06-Housekeeping?id=https://lingcoder.gitee.io/onjava8/#/book/06-Housekeeping?id=利用构造器保证初始化)
+2. 读书记录
+   - 
 
 #### 运算符
 
