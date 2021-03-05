@@ -13,6 +13,7 @@ public class AnsyThread implements Callable<Integer>{
 
     @Override
     public Integer call() throws Exception {
+        Thread.sleep(10000);
         return  start+end;
     }
 

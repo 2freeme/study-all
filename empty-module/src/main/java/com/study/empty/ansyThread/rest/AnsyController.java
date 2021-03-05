@@ -43,4 +43,23 @@ public class AnsyController {
         return a.toString();
     }
 
+
+    @GetMapping("ansyCeshi2")
+    public Long ansyCeshi2(Integer count) throws Exception {
+
+        long l = System.currentTimeMillis();
+        //定义固定长度的线程池  防止线程过多，这个数量一般跟自己电脑的CPU核数进行匹配
+        ExecutorService executorService = Executors.newFixedThreadPool(5);
+        //Future用于获取结果
+        Future<Integer> submit = executorService.submit(new AnsyThread(count, count + 1));
+        if (count / 2 == 0) {
+            Integer integer = submit.get();  //阻塞
+            System.out.println("1111111111" + integer);
+
+        } else {
+            System.out.println("@2222222");
+        }
+
+        return  (System.currentTimeMillis()-l);
+    }
 }
